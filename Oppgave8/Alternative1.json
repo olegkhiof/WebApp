@@ -1,0 +1,79 @@
+"questions": [
+    {
+      "title": "Hvordan kan man finne ut av hvor stor testdekning en har i Jest, og hvor stor testdekning er ønskelig?",
+      "answers": [
+        { "answere": "jest --coverage, ~60-80% dersom testene er gode nok." },
+        {
+          "answere": "--coverage, ~85-100%"
+        },
+        {
+          "answere": "--coverage ~55-80%, da man fort begynner og teste ting som ikke gir mening ved høyere dekning. "
+        },
+        {
+          "answere": "jest --coverage, ~85-90%",
+          "correct": true
+        }
+      ],
+      "helper": {
+        "text": "Testdekning sier ingenting om kvaliteten på testene, og en trenger ikke streve etter 100% testdekning nødvendigvis."
+      }
+    },
+    
+        {
+      "title": "Hva er Mocks?",
+      "answers": [
+        { "answere": "Mocks er en implementasjon av noe som oppfyller samme funksjonalitet, men er ofte litt enklere og uten andre avhengigheter, som gjør at de er raske og passer til bruk i tester. For eksempel han du ha en falsk BrukerService som lagrer bruker informasjonen i et Map istedenfor å lagre det i en Database, som gjør den mye raskere." },
+        {
+          "answere": "Mocks benytter seg av msw biblioteket for å teste funksjoner etter feil, og logger dette til kommandolinjen."
+        },
+        {
+          "answere": "Mocks  logger alle kall til en funksjon, men trenger en eksisterende implementasjon som blir kjørt."
+        },
+        {
+          "answere": "Mocks er type funksjon som kan brukes til alt. Den logger alle kall til funksjonen, som gjør at du kan i etterkant sjekke at den er blitt kalt med riktige verdier og i riktig rekkefølge. Den gir deg også muligheten til å gi den en funksjon som blir kjørt og resultatet blir returnert, eller så kan du si at hver gang mocken blir kalt så returnerer den en gitt verdi.",
+          "correct": true
+        }
+      ],
+      "helper": {
+        "text": "mocks må ikke benytte seg av msw biblioteket, ei må den være en seperat implementasjon av en funksjon."
+      }
+    },
+        {
+      "title": "Hvilken type test bør være mest omfattende og minst tidskrevende?",
+      "answers": [
+        { "answere": "Integrasjonstester" },
+        {
+          "answere": "Mocks/Fakes"
+        },
+        {
+          "answere": "UI tester"
+        },
+        {
+          "answere": "Enhetstester",
+          "correct": true
+        }
+      ],
+      "helper": {
+        "text": "Mocks og Fakes er underkategorier av denne typen tester."
+      }
+    },
+        {
+      "title": "Hvordan kan man skrive en test i jester, for å teste en funsksjon?",
+      "answers": [
+        { "answere": "funksjon(x).AssertEquals(\\"resultat\\") " },
+        {
+          "answere": "expect(funksjon(x)).equals(\\"resultat\\")"
+        },
+        {
+          "answere": "funksjon(x).expect(\\"resultat\\")"
+        },
+        {
+          "answere": "expect(funksjon(x)).toHaveTextContent(\\"resultat\\")",
+          "correct": true
+        }
+      ],
+      "helper": {
+        "text": "\\"Forvent funksjonen til å returnere denne teksten.\\""
+      }
+    }
+  ]
